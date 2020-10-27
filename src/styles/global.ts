@@ -9,11 +9,12 @@ export default createGlobalStyle`
     --color--primary--active: hsl(var(--primary-hue), 84%, 30%);
 
     /* ... */
-
     --border-color: #ebebeb;
 
     /* Box Shadows */
     --shadow: 0px 2px 4px rgba(37, 37, 37, 0.1);
+
+    font-size: 62.5%;
   }
 
   * {
@@ -24,17 +25,18 @@ export default createGlobalStyle`
   }
 
   body {
-    background-color: #FFFFFF;
-    max-width: 980px !important;
-    margin: auto !important;
-    float: none !important;
-    color: var(--primary-color);
+    display: flex;
+    background: #070707;
+    color: #FFF;
+    margin: auto;
+    height: 100vh;
+    max-width: 104rem;
     -webkit-font-smoothing: antialiased;
   }
 
   body, input, button {
     font-family: 'Roboto Mono', serif;
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 
   h1, h2, h3, h4, h5, h6, strong {

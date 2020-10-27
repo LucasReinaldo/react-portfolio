@@ -3,18 +3,50 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   flex-direction: row;
-  gap: 20px;
-  margin: 140px 0 20px 0;
+  gap: 8rem;
+  margin-top: 10rem;
+  justify-content: center;
+
+  @media (max-width: 830px) {
+    margin: 10rem 1.6rem;
+    width: 100%;
+  }
+`;
+
+export const TopContainer = styled.div`
+  display: flex;
+  width: 40rem;
+  height: 50rem;
+  position: relative;
+
+  @media (max-width: 830px) {
+    display: none;
+  }
+`;
+
+export const BackContainer = styled.div`
+  display: flex;
+  position: absolute;
+
+  img {
+    width: 40rem;
+    margin-left: 6rem;
+  }
 `;
 
 export const ImgContainer = styled.div`
+  display: flex;
+  position: absolute;
+
   img {
-    width: 320px;
-    border-radius: 5px;
+    z-index: 2;
+    margin-top: 4rem;
+    width: 42rem;
   }
 `;
 
 export const ProfileContainer = styled.div`
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,35 +54,30 @@ export const ProfileContainer = styled.div`
 `;
 
 export const Presentation = styled.div`
-  line-height: 50px;
-  font-size: 20px;
+  line-height: 4.8rem;
+  font-size: 2.2rem;
 `;
 
 export const PresentationName = styled.div`
-  font-size: 32px;
+  font-size: 4rem;
   font-weight: bold;
 `;
 
 export const QuoteContainer = styled.div`
-  margin-left: auto;
-  font-size: 12px;
-  margin-bottom: 20px;
-  width: 60%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  width: 80%;
+
+  @media (min-width: 830px) {
+    font-size: 1.2rem;
+    width: 50%;
+  }
 `;
 
 export const QuoteText = styled.div`
-  font-size: 12px;
+  font-size: 1.2rem;
 `;
 
 export const Quote = styled.span`
-  font-size: 32px;
-`;
-
-export const SocialContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  height: 120px;
-  gap: 8px;
+  font-size: 3.2rem;
 `;
