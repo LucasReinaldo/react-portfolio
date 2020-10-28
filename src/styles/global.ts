@@ -29,7 +29,7 @@ export default createGlobalStyle`
     background: #070707;
     color: #FFF;
     margin: auto;
-    height: 100vh;
+    max-height: 100vh;
     max-width: 104rem;
     -webkit-font-smoothing: antialiased;
   }
