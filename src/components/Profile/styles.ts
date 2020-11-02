@@ -1,83 +1,110 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.main`
+  flex: 1;
   display: flex;
-  flex-direction: row;
-  gap: 8rem;
-  margin-top: 10rem;
   justify-content: center;
+  align-items: center;
+  max-height: 100vh;
+  margin: 1.6rem auto;
+  width: 100%;
 
-  @media (max-width: 830px) {
-    margin: 10rem 1.6rem;
-    width: 100%;
-  }
-`;
+  div {
+    display: flex;
+    justify-content: center;
 
-export const TopContainer = styled.div`
-  display: flex;
-  width: 40rem;
-  height: 50rem;
-  position: relative;
-
-  @media (max-width: 830px) {
-    display: none;
-  }
-`;
-
-export const BackContainer = styled.div`
-  display: flex;
-  position: absolute;
-
-  img {
-    width: 40rem;
-    margin-left: 6rem;
+    @media (max-width: 500px) {
+      margin: 0.8rem;
+    }
   }
 `;
 
 export const ImgContainer = styled.div`
-  display: flex;
-  position: absolute;
+  justify-content: center;
+  align-items: center;
 
   img {
-    z-index: 2;
-    margin-top: 4rem;
     width: 42rem;
+    height: 58rem;
+  }
+
+  @media (max-width: 800px) {
+    display: none;
+
+    img {
+      width: 32rem;
+      height: 44rem;
+    }
+  }
+
+  @media (max-width: 650px) {
+    display: none;
+    img {
+      display: none;
+    }
+  }
+`;
+
+export const ImgRoundedContainer = styled.div`
+  display: none;
+  flex-shrink: 0;
+
+  img {
+    @media (min-width: 651px) {
+      display: none;
+    }
+
+    @media (max-width: 650px) {
+      width: 12rem;
+      height: 12rem;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
   }
 `;
 
 export const ProfileContainer = styled.div`
   flex: 1;
-  display: flex;
+  width: 100%;
   flex-direction: column;
-  justify-content: center;
-  margin-left: auto;
+  margin-left: 2.4rem;
+
+  @media (max-width: 650px) {
+    margin: 0;
+  }
 `;
 
 export const Presentation = styled.div`
+  display: flex;
+  flex-direction: column;
   line-height: 4.8rem;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
+
+  @media (max-width: 650px) {
+    line-height: 3rem;
+    font-size: 1.8rem;
+  }
 `;
 
-export const PresentationName = styled.div`
-  font-size: 4rem;
-  font-weight: bold;
+export const PresentationName = styled.span`
+  font-size: 4.8rem;
+  font-weight: 600;
+
+  @media (max-width: 650px) {
+    font-size: 3rem;
+  }
 `;
 
 export const QuoteContainer = styled.div`
   margin: 0 auto;
-  font-size: 1.2rem;
-  width: 80%;
-
-  @media (min-width: 830px) {
-    font-size: 1.2rem;
-    width: 50%;
-  }
+  width: max(40%, 80%);
 `;
 
 export const QuoteText = styled.div`
   font-size: 1.2rem;
+  align-items: center;
 `;
 
 export const Quote = styled.span`
-  font-size: 3.2rem;
+  font-size: 6rem;
 `;

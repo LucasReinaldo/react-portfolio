@@ -12,4 +12,9 @@ export const Container = styled.div`
     color: #fff;
     text-decoration: none;
   }
+
+  svg {
+    width: 4.2rem;
+    height: 4.2rem;
+  }
 `;

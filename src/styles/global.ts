@@ -13,37 +13,57 @@ export default createGlobalStyle`
 
     /* Box Shadows */
     --shadow: 0px 2px 4px rgba(37, 37, 37, 0.1);
-
-    font-size: 62.5%;
   }
 
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    outline: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #070707;
+  max-height: 100vh;
+  color: #FFF;
+  -webkit-font-smoothing: antialiased;
+}
+
+body, input, button{
+  font: 1.6rem 'Roboto Mono', serif;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+  font-weight: 500;
+  font-family: 'Roboto Mono', serif;
+}
+
+button, a {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+// Responsivo
+html {
+  font-size: 62.5%;
+
+  @media (max-width: 1080px) {
+    font-size: 60%;
   }
 
-  body {
-    display: flex;
-    background: #070707;
-    color: #FFF;
-    margin: auto;
-    max-height: 100vh;
-    max-width: 104rem;
-    -webkit-font-smoothing: antialiased;
+  @media (max-width: 980px) {
+    font-size: 48%;
   }
 
-  body, input, button {
-    font-family: 'Roboto Mono', serif;
-    font-size: 1.6rem;
+  @media (max-width: 720px) {
+    font-size: 45%;
   }
 
-  h1, h2, h3, h4, h5, h6, strong {
-    font-weight: 500;
+  @media (max-width: 425px) {
+    font-size: 40%;
   }
-
-  button {
-    cursor: pointer;
-  }
-`;
+}`;

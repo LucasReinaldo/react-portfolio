@@ -19,7 +19,7 @@ const Social: React.FC = () => {
         href="https://www.linkedin.com/in/lucas-reinaldo-de-melo/"
         aria-label="LinkedIn LucasReinaldo"
       >
-        <IoLogoLinkedin size={42} />
+        <IoLogoLinkedin />
       </a>
       <a
         target="_blank"
@@ -27,7 +27,7 @@ const Social: React.FC = () => {
         href="https://github.com/LucasReinaldo"
         aria-label="Github LucasReinaldo"
       >
-        <IoLogoGithub size={42} />
+        <IoLogoGithub />
       </a>
 
       <a
@@ -36,7 +36,7 @@ const Social: React.FC = () => {
         href="https://wakatime.com/@LucasReinaldoMelo"
         aria-label="LinkedIn LucasReinaldo"
       >
-        <IoIosCode size={42} />
+        <IoIosCode />
       </a>
 
       <a
@@ -45,14 +45,14 @@ const Social: React.FC = () => {
         href="https://www.instagram.com/lreinaldodemelo/"
         aria-label="LinkedIn LucasReinaldo"
       >
-        <IoLogoInstagram size={42} />
+        <IoLogoInstagram />
       </a>
       <a
         target="_blank"
         rel="noopener noreferrer"
         href="mailto:lucasreinaldo.demelo@hotmail.com?cc:l.reinaldodemelo@gmail.com"
       >
-        <IoIosMail size={42} />
+        <IoIosMail />
       </a>
     </Container>
   );

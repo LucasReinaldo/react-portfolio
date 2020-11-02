@@ -4,13 +4,11 @@ export const Header = styled.header`
   align-items: center;
   background-color: #03060b;
   display: flex;
-  height: 7rem;
+  font-size: 1.8rem;
+  height: 8rem;
   left: 0;
-  position: fixed;
   right: 0;
   top: 0;
-  font-size: 1.8rem;
-  color: #ffffff;
 
   nav {
     ul {
@@ -23,7 +21,7 @@ export const Header = styled.header`
           text-decoration: none;
           color: white;
           text-transform: uppercase;
-          padding: 1.8rem;
+          padding: 1.6rem;
           transition: all 100ms linear 0s;
           font-weight: 500;
 
@@ -45,15 +43,8 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 90%;
-
   max-width: 114rem;
-
   margin: auto;
-
-  @media (max-width: 1140px) {
-    width: 100%;
-    margin: 0.8rem;
-  }
 `;
 
 export const Title = styled.div`
