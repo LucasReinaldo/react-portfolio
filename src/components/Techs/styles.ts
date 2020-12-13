@@ -11,6 +11,10 @@ export const TechsContainer = styled.div`
   display: flex;
   flex-direction: row;
 
+  @media (max-width: 650px) {
+    flex-direction: row;
+  }
+
   span {
     border: 1px solid #eee;
     margin: 0 1.6em;
@@ -24,6 +28,6 @@ export const Tech = styled.p`
   font-weight: 500;
 
   @media (max-width: 520px) {
-    font-size: 2rem;
+    font-size: 16px;
   }
 `;

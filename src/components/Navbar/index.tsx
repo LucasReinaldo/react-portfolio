@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { IoIosMoon } from 'react-icons/io';
+import { BiCoffeeTogo } from 'react-icons/bi';
 
 import { Container, Header, Title } from './styles';
 
@@ -12,9 +12,9 @@ const Navbar: React.FC = () => {
         <nav>
           <ul>
             <li>
-              <Link to="#cv">CV</Link>
+              <Link to="#cv" />
             </li>
-            <IoIosMoon size={28} />
+            <BiCoffeeTogo size={28} />
           </ul>
         </nav>
       </Container>

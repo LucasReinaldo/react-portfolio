@@ -3,7 +3,8 @@ import React from 'react';
 import {
   Container,
   ImgContainer,
-  ImgRoundedContainer,
+  SquareImage,
+  RoundImage,
   ProfileContainer,
   Presentation,
   PresentationName,
@@ -23,7 +24,8 @@ const Profile: React.FC = () => {
     <Container>
       <div>
         <ImgContainer>
-          <img src={imageSrc} alt="Lucas Reinaldo" />
+          <SquareImage src={imageSrc} alt="Lucas Reinaldo" />
+          <RoundImage src={imageRoundedSrc} alt="Lucas Reinaldo" />
         </ImgContainer>
 
         <ProfileContainer>
@@ -44,9 +46,6 @@ const Profile: React.FC = () => {
 
           <Social />
         </ProfileContainer>
-        <ImgRoundedContainer>
-          <img src={imageRoundedSrc} alt="Lucas Reinaldo" />
-        </ImgRoundedContainer>
       </div>
     </Container>
   );

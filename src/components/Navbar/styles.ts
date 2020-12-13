@@ -4,7 +4,6 @@ export const Header = styled.header`
   align-items: center;
   background-color: #03060b;
   display: flex;
-  font-size: 1.8rem;
   height: 8rem;
   left: 0;
   right: 0;
@@ -51,4 +50,5 @@ export const Title = styled.div`
   display: flex;
   flex-direction: column;
   width: 6rem;
+  font-size: 14px;
 `;

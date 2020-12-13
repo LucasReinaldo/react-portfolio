@@ -1,65 +1,45 @@
 import styled from 'styled-components';
 
 export const Container = styled.main`
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-height: 100vh;
-  margin: 1.6rem auto;
-  width: 100%;
+  margin: 6rem auto;
 
-  div {
+  > div {
     display: flex;
-    justify-content: center;
+    margin: auto;
 
-    @media (max-width: 500px) {
+    @media (max-width: 650px) {
+      display: flex;
+      flex-direction: column;
       margin: 0.8rem;
     }
   }
 `;
 
 export const ImgContainer = styled.div`
+  display: flex;
   justify-content: center;
   align-items: center;
+`;
 
-  img {
-    width: 42rem;
-    height: 58rem;
-  }
-
-  @media (max-width: 800px) {
-    display: none;
-
-    img {
-      width: 32rem;
-      height: 44rem;
-    }
-  }
+export const SquareImage = styled.img`
+  width: 42rem;
+  height: 58rem;
 
   @media (max-width: 650px) {
     display: none;
-    img {
-      display: none;
-    }
   }
 `;
 
-export const ImgRoundedContainer = styled.div`
+export const RoundImage = styled.img`
   display: none;
   flex-shrink: 0;
 
-  img {
-    @media (min-width: 651px) {
-      display: none;
-    }
-
-    @media (max-width: 650px) {
-      width: 12rem;
-      height: 12rem;
-      border-radius: 50%;
-      flex-shrink: 0;
-    }
+  @media (max-width: 650px) {
+    display: flex;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    flex-shrink: 0;
   }
 `;
 
@@ -77,12 +57,13 @@ export const ProfileContainer = styled.div`
 export const Presentation = styled.div`
   display: flex;
   flex-direction: column;
-  line-height: 4.8rem;
+  line-height: 3.6rem;
   font-size: 2.4rem;
+  margin: 3.2rem auto;
+  text-align: center;
 
   @media (max-width: 650px) {
-    line-height: 3rem;
-    font-size: 1.8rem;
+    font-size: 16px;
   }
 `;
 
@@ -91,7 +72,7 @@ export const PresentationName = styled.span`
   font-weight: 600;
 
   @media (max-width: 650px) {
-    font-size: 3rem;
+    font-size: 24px;
   }
 `;
 
@@ -101,8 +82,8 @@ export const QuoteContainer = styled.div`
 `;
 
 export const QuoteText = styled.div`
-  font-size: 1.2rem;
-  align-items: center;
+  font-size: 11px;
+  text-align: center;
 `;
 
 export const Quote = styled.span`
