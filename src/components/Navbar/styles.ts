@@ -50,5 +50,9 @@ export const Title = styled.div`
   display: flex;
   flex-direction: column;
   width: 6rem;
-  font-size: 14px;
+  font-size: 18px;
+
+  @media (max-width: 650px) {
+    font-size: 14px;
+  }
 `;
