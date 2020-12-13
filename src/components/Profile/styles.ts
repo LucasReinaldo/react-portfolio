@@ -57,13 +57,14 @@ export const ProfileContainer = styled.div`
 export const Presentation = styled.div`
   display: flex;
   flex-direction: column;
-  line-height: 3.6rem;
+  line-height: 4.4rem;
   font-size: 2.4rem;
   margin: 3.2rem auto;
-  text-align: center;
 
   @media (max-width: 650px) {
     font-size: 16px;
+    text-align: center;
+    line-height: 3.6rem;
   }
 `;
 
@@ -82,8 +83,12 @@ export const QuoteContainer = styled.div`
 `;
 
 export const QuoteText = styled.div`
-  font-size: 11px;
+  font-size: 13px;
   text-align: center;
+
+  @media (max-width: 650px) {
+    font-size: 11px;
+  }
 `;
 
 export const Quote = styled.span`
